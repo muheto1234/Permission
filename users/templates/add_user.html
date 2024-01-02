@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <h2>Ajouter un utilisateur</h2>
+        <form method="POST" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="is_directeur">Directeur:</label>
+            <input type="checkbox" id="is_directeur" name="is_directeur"><br>
+
+            <label for="is_commandant">Commandant:</label>
+            <input type="checkbox" id="is_commandant" name="is_commandant"><br>
+
+            <label for="is_secretaire">Secrétaire:</label>
+            <input type="checkbox" id="is_secraiteur" name="is_secraiteur"><br><br>
+
+            <input type="submit" value="Ajouter">
+        </form>
+    </body>
+</body>
+
+</html>
